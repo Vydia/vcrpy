@@ -222,7 +222,7 @@ class Cassette:
 
     def append(self, request, response):
         """Add a request, response pair to this cassette"""
-        log.info("Appending request %s and response %s", request, response)
+        log.info("Appending request %s", request)
         request = self._before_record_request(request)
         if not request:
             return
